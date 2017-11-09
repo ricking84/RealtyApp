@@ -1,1 +1,1 @@
-googleMapsAuth = "AIzaSyCvD82CsHfL--vFtotMwu5oo7ttRrZMXWE"
+var googleMapsAuth = "AIzaSyCvD82CsHfL--vFtotMwu5oo7ttRrZMXWE"

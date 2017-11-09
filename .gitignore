@@ -3,9 +3,9 @@
 *.jpg
 
 # Folder config file
-RealtyApp\js\auth.js
+auth.js
 
 # Data Files
-*.pdf
-*.xlsx
-*.csv
+.xlsx
+.csv
+.pdf
