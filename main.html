@@ -4,9 +4,10 @@
 <head>
   <link rel="stylesheet" href="main.css">
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src=js/data.js></script>
-  <script src=js/map.js></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvD82CsHfL--vFtotMwu5oo7ttRrZMXWE&callback=initMap"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/auth.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=" +googleMapsAuth+ "&callback=initMap"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
     </div>
   </header> -->
 
-  <div id="map"></div>
+    <div id="map"></div>
 </body>
 
 </html>

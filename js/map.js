@@ -12,7 +12,8 @@ function initMap() {
     for (i in June) {
         var Address = June[i].Address
         console.log(Address)
-        let url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Address + "&key=AIzaSyCvD82CsHfL--vFtotMwu5oo7ttRrZMXWE";
+        let url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Address + "&key=" + googleMapsAuth;
+        console.log(url)
         fetch(url)
             .then(res => res.json())
             .then((out) => {
@@ -22,7 +23,7 @@ function initMap() {
         var lati = June[i].Latitude;
         var lng = June[i].Longitude;
         //console.log(lati + "," + lng)
-       // console.log(geo)
+        // console.log(geo)
 
         var latiLng = new google.maps.LatLng(lati, lng);
         var marker = new google.maps.Marker({
