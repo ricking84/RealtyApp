@@ -1,0 +1,49 @@
+header{
+background-color: black;
+}
+body{
+    background-color:black;
+}
+label{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}  
+#land{
+    display: inline-block;
+} 
+#commercial{
+    display: inline-block;
+} 
+#residential{
+    display: inline-block;
+} 
+#pics{
+ background-color: black;
+ color: white;
+ text-align: center;
+}
+#address {
+  width: 250px;
+  margin: 5px;
+}
+#inputAdd{
+display: inline-block;
+
+}
+img{
+    padding-left: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#map {
+    height: 100%;
+  }
+
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
