@@ -3,7 +3,7 @@
 *.jpg
 
 # Folder config file
-auth.js
+RealtyApp\js\auth.js
 
 # Data Files
 *.pdf
