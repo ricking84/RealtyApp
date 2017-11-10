@@ -1,11 +1,11 @@
 # Windows image file caches
-*.png
-*.jpg
+images/*.png
+images/*.jpg
 
 # Folder config file
-auth.js
+js/auth.js
 
 # Data Files
-.xlsx
-.csv
-.pdf
+RealtyAppData/*.xlsx
+RealtyAppData/*.csv
+RealtyAppData/*.pdf
