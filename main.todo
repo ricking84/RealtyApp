@@ -1,0 +1,8 @@
+To Do: 
+(Ctrl+Enter = New Task)
+(Alt+d = done)
+(Alt+c = cancelled)
+☐ When user clicks Residential or Commercial then only show those on a map.
+☐ Finish Lat Long API call.
+☐ Allow user to enter address and show addresses that have permits near it.
+☐ Figure out how to use external data file.

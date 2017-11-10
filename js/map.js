@@ -8,7 +8,6 @@ function initMap() {
     });
 
     for (i in June) {
-
         var Address = June[i].Address
         let url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Address + "&key=" + googleMapsAuth;
         console.log(url)
