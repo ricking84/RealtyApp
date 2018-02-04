@@ -2,7 +2,14 @@ To Do:
 (Ctrl+Enter = New Task)
 (Alt+d = done)
 (Alt+c = cancelled)
-☐ When user clicks Residential or Commercial then only show those on a map.
-☐ Finish Lat Long API call.
-☐ Allow user to enter address and show addresses that have permits near it.
+
 ☐ Figure out how to use external data file.
+☐ Finish Lat Long API call.
+☐ When user clicks Residential or Commercial then only show those on a map.
+
+☐ Allow user to enter address and show addresses that have permits near it.
+
+☐ Hook up to mls data.
+
+☐ Find houses that sold around permit area and see if it was higher than before.
+☐ Add probability that property will increase in value due to permit.
