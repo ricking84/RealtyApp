@@ -3,9 +3,7 @@ images/*.png
 images/*.jpg
 
 # Folder config file
-js/auth.js
+REALTYAPP/js/auth.js
 
 # Data Files
-RealtyAppData/*.xlsx
-RealtyAppData/*.csv
-RealtyAppData/*.pdf
+REALTYAPP/RealtyAppData
