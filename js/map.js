@@ -2,7 +2,7 @@ function initMap() {
     var obj = JSON.parse(data);
     var June = obj.June
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 12,
         center: new google.maps.LatLng(36.3575824, -94.20917380000003),
         mapTypeId: 'terrain'
     });

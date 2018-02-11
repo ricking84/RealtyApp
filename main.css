@@ -1,49 +1,50 @@
-header{
-background-color: black;
-}
-body{
+html, body{
     background-color:black;
-}
-label{
+    font-size: 25px;
+  }
+ #header{
+    font-size: 45px;
     color: white;
-    font-size: 20px;
-    margin: 5px;
-}  
-#land{
-    display: inline-block;
-} 
-#commercial{
-    display: inline-block;
-} 
-#residential{
-    display: inline-block;
-} 
-#pics{
- background-color: black;
- color: white;
- text-align: center;
-}
-#address {
-  width: 250px;
-  margin: 5px;
-}
-#inputAdd{
-display: inline-block;
+    text-align: center;
+ }
 
+#map{
+    height: 500px;
+    width: 100%;
 }
-img{
-    padding-left: 20px;
-    margin: auto;
-    cursor: pointer;
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
 }
 
-#map {
-    height: 100%;
-  }
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-  /* Optional: Makes the sample page fill the window. */
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#search{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+input[type="text"] {
+   width: 500px;
+}
+
+input, select, textarea{
+    color: grey;
+}
