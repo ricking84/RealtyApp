@@ -4,24 +4,35 @@
 <head>
   <link rel="stylesheet" href="main.css">
   <script src="js/auth.js"></script>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/requirejs/require.js"></script>
   <script src="js/data.js"></script>
   <script src="js/map.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/ui.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvD82CsHfL--vFtotMwu5oo7ttRrZMXWE&callback=initMap"></script>
 </head>
 
 <body>
-  <div id='header'>Predictive Realty Analytics</div>>
+  <div id='header'>NWA Realty Analytics</div>>
   <div class="topnav">
     <a href="#">Land</a>
     <a href="#">Residential</a>
     <a href="#">Commerical</a>
-    <div id="search">
-      <label>Address</label>
-      <input type="text" value="ex.1630 amber way, bentonville, ar">
-      <button>Search</button>
+    <div id="search">Permit Type
+      <select id="ptype" name="ptype">
+        <option value="" disabled selected>Select your option</option>
+      </select>
     </div>
+    <div id="search">Month
+      <select id="pdate" name="pdate" onchange="getdata()">
+        <option value="" disabled selected>Select your option</option>
+        <option value='Jan18'>Jan 2018</option>
+        <option value='Feb18'>Feb 2018</option>
+        <option value='Mar18'>Mar 2018</option>
+      </select>
+    </div>
+    <!-- Address Search:
+      <input id="address" type="text" placeholder="ex.1630 amber way, bentonville, ar">
+      <input type="button" value="Locate" onclick="codeAddress()"> -->
   </div>
   <div id="map"></div>
 </body>

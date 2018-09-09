@@ -1,30 +1,45 @@
+// const http = require("http");
+
+var geocoder;
+var map;
+
 function initMap() {
-    var obj = JSON.parse(data);
-    var June = obj.June
-    var map = new google.maps.Map(document.getElementById('map'), {
+    geocoder = new google.maps.Geocoder();
+    //map center lat/long (bentonville)
+    var LongCenter = -94.20917380000003;
+    var LatCenter = 36.3575824;
+    var mapOptions = {
         zoom: 12,
-        center: new google.maps.LatLng(36.3575824, -94.20917380000003),
+        center: new google.maps.LatLng(LatCenter, LongCenter),
         mapTypeId: 'terrain'
+    };
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    //build map
+    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+    var marker = new google.maps.Marker({
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: { lat: LatCenter, lng: LongCenter },
+        title: 'Center Marker',
+        icon: image
     });
 
-    for (i in June) {
-        var Address = June[i].Address
-        let url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Address + "&key=" + googleMapsAuth;
-        console.log(url)
-        fetch(url)
-            .then(res => res.json())
-            .then((out) => {
-                console.log(out);
-            })
-            .catch(err => { throw err });
-        var lati = June[i].Latitude;
-        var lng = June[i].Longitude;
-       // console.log(lati + "," + lng)
+    // var somedata = require('./data.js');
 
-        var latiLng = new google.maps.LatLng(lati, lng);
-        var marker = new google.maps.Marker({
-            position: latiLng,
-            map: map
-        });
-    }
+    // console.log(somedata.Address);
+    // for (var i in Address) {
+    //     geocoder.geocode({ 'address': Address }, function (results, status) {
+    //         if (status == 'OK') {
+    //             // console.log(Address);
+    //             // map.setCenter(results[0].geometry.location);
+    //             // var marker = new google.maps.Marker({
+    //             //     map: map,
+    //             //     position: results[0].geometry.location
+    //             // });
+    //         } else {
+    //             alert('Geocode was not successful for the following reason: ' + status);
+    //         };
+    //     });
+    // };
+
 };

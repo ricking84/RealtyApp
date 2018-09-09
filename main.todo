@@ -3,8 +3,9 @@ To Do:
 (Alt+d = done)
 (Alt+c = cancelled)
 
-☐ Figure out how to use external data file.
-☐ Finish Lat Long API call.
+✔ Figure out how to use external data file. @done (3/19/2018, 8:27:12 AM)
+✔ Finish Lat Long API call. @done (3/19/2018, 8:27:15 AM)
+☐ When user selects month/year give them the data for that month/year
 ☐ When user clicks Residential or Commercial then only show those on a map.
 
 ☐ Allow user to enter address and show addresses that have permits near it.
